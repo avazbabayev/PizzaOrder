@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    tools:context="com.bizimaptek.bizimaptek.pizzaorder.MainActivity">
+
+<ViewFlipper
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/flipper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Crust Selection" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:prompt="@string/spinnertitle" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Topping Selection" />
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:prompt="@string/spinnertitle" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Confirmation"
+        android:id="@+id/edittext"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/checkbox_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="  Extra Cheese" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Get Location"
+            android:id="@+id/location"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settextlocation"/>
+        <TextView
+
+            android:layout_marginTop="20dp"
+            android:id="@+id/text1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Name-Surname" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext1"/>
+        <TextView
+        android:id="@+id/text2"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Telephone" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext2"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Address"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext3"/>
+
+    </LinearLayout>
+ </ViewFlipper>
+</LinearLayout>

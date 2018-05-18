@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pizza Order</string>
+    <string name="spinnertitle">Select One </string>
+</resources>
